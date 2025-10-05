@@ -118,8 +118,6 @@ EE371/
 
 - **Course**: EE371 Design of Digital Circuits and Systems
 - **Institution**: University of Washington
-- **Semester**: 25 Winter
+- **Quarter**: 25 Winter
 
----
 
-*This repository contains all lab assignments completed as part of the EE371 Digital Systems Laboratory course. Each lab builds upon previous concepts and introduces new digital system design techniques.*
