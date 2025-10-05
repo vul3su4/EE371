@@ -1,6 +1,6 @@
 # EE371 Digital Systems Laboratory
 
-This repository contains all lab assignments and projects completed for EE371 Digital Systems Laboratory course.
+This repository contains all lab assignments and projects completed for EE371 Design of Digital Circuits and Systems Laboratory course.
 
 ## Lab Overview
 
@@ -116,7 +116,7 @@ EE371/
 
 ## Course Information
 
-- **Course**: EE371 Digital Systems Laboratory
+- **Course**: EE371 Design of Digital Circuits and Systems
 - **Institution**: University of Washington
 - **Semester**: 25 Winter
 
