@@ -1,0 +1,538 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simulation/modelsim
+vcount_updw
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1741850363
+!i10b 1
+!s100 @c^S=P7?LDe=D6;h9bdFO0
+ICo2I[`B7iVzTBKkLWVKSQ1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 count_updw_sv_unit
+S1
+R0
+Z5 w1741769474
+Z6 8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/count_updw.sv
+Z7 FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/count_updw.sv
+L0 4
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1741850363.000000
+Z10 !s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/count_updw.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/count_updw.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2
+Z14 tCvgOpt 0
+vcount_updw_testbench
+R1
+R2
+!i10b 1
+!s100 R^@dD3[0]BMXB^7ZN^3V20
+Ie[Sch``eDIXF<2UO]XCSc0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 47
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vcounter
+R1
+R2
+!i10b 1
+!s100 fJYCV;cCS50RVbebR<n_b2
+I=DO7XT0dc3]9RYQmS?QAG0
+R3
+Z15 !s105 counter_sv_unit
+S1
+R0
+Z16 w1737142384
+Z17 8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/counter.sv
+Z18 FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/counter.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/counter.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/counter.sv|
+!i113 1
+R12
+R13
+R14
+vcounter_testbench
+R1
+R2
+!i10b 1
+!s100 8>?B=c0N5K3WM@Vin@S[V2
+I=[TE:R3m=ih_]E;SKC2;C2
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 27
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+vdata7seg
+R1
+R2
+!i10b 1
+!s100 CEOc=Czn0Ojn7IcVRBWL_1
+I<IchbmVO8A8:dATjSR?mX2
+R3
+!s105 data7seg_sv_unit
+S1
+R0
+w1739702734
+8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/data7seg.sv
+FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/data7seg.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/data7seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/data7seg.sv|
+!i113 1
+R12
+R13
+R14
+vDE1_SoC
+R1
+Z21 !s110 1741850364
+!i10b 1
+!s100 Ib54^^g21ki_kTZKVkFJI0
+IjAc3ITBPQST_TTO7M[l:n1
+R3
+Z22 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z23 w1741832070
+Z24 8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv
+Z25 FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv
+L0 8
+R8
+r1
+!s85 0
+31
+Z26 !s108 1741850364.000000
+Z27 !s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv|
+Z28 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv|
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R21
+!i10b 1
+!s100 ;5k2QOc]BJ@Y=f7mnD3aj3
+IFAZ9=h^X]SHD8Uk:`K92Q2
+R3
+R22
+S1
+R0
+R23
+R24
+R25
+L0 96
+R8
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vmux2_1
+R1
+R2
+!i10b 1
+!s100 HzMF`Z[Mc9LQ<7FS4de:U0
+I;Z77>:IW`HF^CMZM5HWzV0
+R3
+Z29 !s105 parkinglot_datapath_sv_unit
+S1
+R0
+Z30 w1741782056
+Z31 8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv
+Z32 FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv
+L0 113
+R8
+r1
+!s85 0
+31
+R9
+Z33 !s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv|
+Z34 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv|
+!i113 1
+R12
+R13
+R14
+vparkinglot_ctrl
+R1
+R2
+!i10b 1
+!s100 aS_nIj8[@5_Vze=[CzKSl1
+Icl2_C01nA4kYmc2>c7>6?0
+R3
+Z35 !s105 parkinglot_ctrl_sv_unit
+S1
+R0
+Z36 w1741776192
+Z37 8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_ctrl.sv
+Z38 FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_ctrl.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z39 !s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_ctrl.sv|
+Z40 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_ctrl.sv|
+!i113 1
+R12
+R13
+R14
+vparkinglot_ctrl_testbench
+R1
+R2
+!i10b 1
+!s100 4>hCmM[o;P=j5KcJBE?jU1
+IW2Ylc^EF1JTHafjbnN7_l1
+R3
+R35
+S1
+R0
+R36
+R37
+R38
+L0 98
+R8
+r1
+!s85 0
+31
+R9
+R39
+R40
+!i113 1
+R12
+R13
+R14
+vparkinglot_datapath
+R1
+R2
+!i10b 1
+!s100 _g=4QLO?EFbRTm3K68Ub71
+IH5Z0IT14?MaBI7N6VUFf>1
+R3
+R29
+S1
+R0
+R30
+R31
+R32
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+R33
+R34
+!i113 1
+R12
+R13
+R14
+vparkinglot_datapath_testbench
+R1
+R2
+!i10b 1
+!s100 7WcR57gL84jnaKkE?EjRM0
+I`3^<k^z3L@O`;0Tma>1F<0
+R3
+R29
+S1
+R0
+R30
+R31
+R32
+L0 126
+R8
+r1
+!s85 0
+31
+R9
+R33
+R34
+!i113 1
+R12
+R13
+R14
+vram8x16
+R2
+!i10b 1
+!s100 V4H:Ph?N7Yfef=_n_PPRY0
+IVj3Z<a@<1XjFkGDVYhlQQ1
+R3
+R0
+w1741737342
+8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/ram8x16.v
+FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/ram8x16.v
+L0 40
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/ram8x16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/ram8x16.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2
+R14
+vsimple3D
+R1
+R2
+!i10b 1
+!s100 KUk2f32Q<6^ALnDkEM?]e2
+I^<g][HFm[4DZ8OTngMNBY1
+R3
+Z41 !s105 simple3D_sv_unit
+S1
+R0
+Z42 w1741850143
+Z43 8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv
+Z44 FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z45 !s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv|
+Z46 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv|
+!i113 1
+R12
+R13
+R14
+nsimple3@d
+vsimple3D_testbench
+R1
+R2
+!i10b 1
+!s100 T2<597X<LcngR<iR^R4=I1
+ImeUnC8_lIz?hQCSbRGU5^1
+R3
+R41
+S1
+R0
+R42
+R43
+R44
+L0 33
+R8
+r1
+!s85 0
+31
+R9
+R45
+R46
+!i113 1
+R12
+R13
+R14
+nsimple3@d_testbench
+vtop_ctrl_datapath
+R1
+R2
+!i10b 1
+!s100 lJ26[^PebQT5UJ]iiAFWI2
+IVj8LG10k6k5WiVX9h7R`83
+R3
+Z47 !s105 top_ctrl_datapath_sv_unit
+S1
+R0
+Z48 w1741798632
+Z49 8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_ctrl_datapath.sv
+Z50 FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_ctrl_datapath.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z51 !s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_ctrl_datapath.sv|
+Z52 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_ctrl_datapath.sv|
+!i113 1
+R12
+R13
+R14
+vtop_ctrl_datapath_testbench
+R1
+R2
+!i10b 1
+!s100 74]PajP`;m0gLk>E5kF]a0
+IIFKN_]8]HW@g>9GffOi?>0
+R3
+R47
+S1
+R0
+R48
+R49
+R50
+L0 71
+R8
+r1
+!s85 0
+31
+R9
+R51
+R52
+!i113 1
+R12
+R13
+R14
+vtop_datapath
+R1
+R2
+!i10b 1
+!s100 h]lgjJdIOl36S?I<V=lVC2
+IG;9Qg8e9Wk?2STO5RnO``0
+R3
+Z53 !s105 top_datapath_sv_unit
+S1
+R0
+Z54 w1741850182
+Z55 8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv
+Z56 FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z57 !s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv|
+Z58 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv|
+!i113 1
+R12
+R13
+R14
+vtop_datapath_testbench
+R1
+R2
+!i10b 1
+!s100 `Y=zT9SH2oD>c_=Oc65el3
+I2R=BCV]1zQFA;e5DdB4@60
+R3
+R53
+S1
+R0
+R54
+R55
+R56
+L0 63
+R8
+r1
+!s85 0
+31
+R9
+R57
+R58
+!i113 1
+R12
+R13
+R14
+vtwoDFF
+R1
+R2
+!i10b 1
+!s100 51DV59mE2[H<Rdo75^8=]3
+IXJH^@CTOVDb`SW0h;KRbR2
+R3
+!s105 twoDFF_sv_unit
+S1
+R0
+w1737108306
+8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/twoDFF.sv
+FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/twoDFF.sv
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/twoDFF.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/twoDFF.sv|
+!i113 1
+R12
+R13
+R14
+ntwo@d@f@f
+vuserInput
+R1
+R2
+!i10b 1
+!s100 >JnWI7[27Ub4mzUHl[zNn3
+IUWkc`o[C1D@HbGNR6T<3o2
+R3
+!s105 userInput_sv_unit
+S1
+R0
+w1737108378
+8D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/userInput.sv
+FD:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/userInput.sv
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/userInput.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2|D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/userInput.sv|
+!i113 1
+R12
+R13
+R14
+nuser@input

@@ -1,0 +1,182 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/ram8x16.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/ram8x16.v 
+# -- Compiling module ram8x16
+# 
+# Top level modules:
+# 	ram8x16
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/count_updw.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/count_updw.sv 
+# -- Compiling module count_updw
+# -- Compiling module count_updw_testbench
+# 
+# Top level modules:
+# 	count_updw_testbench
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/data7seg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/data7seg.sv 
+# -- Compiling module data7seg
+# 
+# Top level modules:
+# 	data7seg
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/parkinglot_ctrl.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/parkinglot_ctrl.sv 
+# -- Compiling module parkinglot_ctrl
+# -- Compiling module parkinglot_ctrl_testbench
+# 
+# Top level modules:
+# 	parkinglot_ctrl_testbench
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/parkinglot_datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/parkinglot_datapath.sv 
+# -- Compiling module parkinglot_datapath
+# -- Compiling module mux2_1
+# -- Compiling module parkinglot_datapath_testbench
+# 
+# Top level modules:
+# 	parkinglot_datapath_testbench
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/twoDFF.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/twoDFF.sv 
+# -- Compiling module twoDFF
+# 
+# Top level modules:
+# 	twoDFF
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/userInput.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/userInput.sv 
+# -- Compiling module userInput
+# 
+# Top level modules:
+# 	userInput
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/simple3D.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/simple3D.sv 
+# -- Compiling module simple3D
+# -- Compiling module simple3D_testbench
+# 
+# Top level modules:
+# 	simple3D_testbench
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/top_datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/top_datapath.sv 
+# -- Compiling module top_datapath
+# -- Compiling module top_datapath_testbench
+# 
+# Top level modules:
+# 	top_datapath_testbench
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/top_ctrl_datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/top_ctrl_datapath.sv 
+# -- Compiling module top_ctrl_datapath
+# -- Compiling module top_ctrl_datapath_testbench
+# 
+# Top level modules:
+# 	top_ctrl_datapath_testbench
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2 {C:/cychen/work/371/LAB6/Task2/DE1_SoC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:42 on Mar 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/cychen/work/371/LAB6/Task2" C:/cychen/work/371/LAB6/Task2/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 21:32:42 on Mar 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.DE1_SoC_testbench -Lf altera_mf_ver
+# vsim -gui -l msim_transcript work.DE1_SoC_testbench -Lf altera_mf_ver 
+# Start time: 21:33:06 on Mar 13,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.top_ctrl_datapath
+# Loading work.parkinglot_ctrl
+# Loading work.top_datapath
+# Loading work.simple3D
+# Loading work.counter
+# Loading work.twoDFF
+# Loading work.userInput
+# Loading work.parkinglot_datapath
+# Loading work.data7seg
+# Loading work.mux2_1
+# Loading work.count_updw
+# Loading work.ram8x16
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) C:/cychen/work/371/LAB6/Task2/top_datapath.sv(38): [TFMPC] - Too few port connections. Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/top/datapath/simple File: C:/cychen/work/371/LAB6/Task2/simple3D.sv
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB6/Task2/top_datapath.sv(38): [TFMPC] - Missing connection for port 'full'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB6/Task2/top_datapath.sv(38): [TFMPC] - Missing connection for port 'empty'.
+# ** Warning: (vsim-3015) C:/cychen/work/371/LAB6/Task2/parkinglot_datapath.sv(80): [PCDPC] - Port size (4) does not match connection size (3) for port 'data'. The port definition is at: C:/cychen/work/371/LAB6/Task2/data7seg.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/top/datapath/parkinglot/d4 File: C:/cychen/work/371/LAB6/Task2/data7seg.sv
+# ** Warning: (vsim-3015) C:/cychen/work/371/LAB6/Task2/parkinglot_datapath.sv(81): [PCDPC] - Port size (4) does not match connection size (3) for port 'data'. The port definition is at: C:/cychen/work/371/LAB6/Task2/data7seg.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/top/datapath/parkinglot/d3 File: C:/cychen/work/371/LAB6/Task2/data7seg.sv
+# ** Warning: (vsim-3015) C:/cychen/work/371/LAB6/Task2/parkinglot_datapath.sv(84): [PCDPC] - Port size (4) does not match connection size (3) for port 'data'. The port definition is at: C:/cychen/work/371/LAB6/Task2/data7seg.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/top/datapath/parkinglot/d0 File: C:/cychen/work/371/LAB6/Task2/data7seg.sv
+do C:/cychen/work/371/LAB6/Task2/DE1_SoC_wave.do
+run -all
+# ** Note: $stop    : C:/cychen/work/371/LAB6/Task2/DE1_SoC.sv(221)
+#    Time: 139150 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at C:/cychen/work/371/LAB6/Task2/DE1_SoC.sv line 221
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/cychen/work/371/LAB6/Task2/DE1_SoC_wave.do
+# End time: 21:36:10 on Mar 13,2025, Elapsed time: 0:03:04
+# Errors: 0, Warnings: 6

@@ -1,0 +1,229 @@
+/*====================================================================*/
+//  Name: Brian Chen
+//  Date: 02-07-2025
+//  EE/CSE371 LAB3-- Display Interface (Task 1)
+//  Device under Test (dut) --- DE1_SoC    
+//  File Name: DE1_SoC.sv                                                  
+/*====================================================================*/ 
+module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, 
+                KEY, LEDR, SW, CLOCK_50, VGA_R, VGA_G, VGA_B, 
+					 VGA_BLANK_N, VGA_CLK, VGA_HS, VGA_SYNC_N, VGA_VS);
+	
+	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	output logic [9:0] LEDR;
+	input logic [3:0] KEY;
+	input logic [9:0] SW;
+
+	input CLOCK_50;
+	output [7:0] VGA_R;
+	output [7:0] VGA_G;
+	output [7:0] VGA_B;
+	output VGA_BLANK_N;
+	output VGA_CLK;
+	output VGA_HS;
+	output VGA_SYNC_N;
+	output VGA_VS;
+	
+	assign HEX0 = '1;
+	assign HEX1 = '1;
+	assign HEX2 = '1;
+	assign HEX3 = '1;
+	assign HEX4 = '1;
+	assign HEX5 = '1;
+	assign LEDR = SW;
+	
+	logic reset;  // delcare reset
+	
+	assign reset = SW[9]; // assign SW[9] for readibility
+	
+	logic [9:0] x0, x1, x;
+	logic [8:0] y0, y1, y;
+	logic frame_start;
+	logic pixel_color;
+	
+	
+	//////// DOUBLE_FRAME_BUFFER ////////
+	logic dfb_en;
+	assign dfb_en = 1'b0; //****************
+	/////////////////////////////////////
+	
+	VGA_framebuffer fb (.clk(CLOCK_50), .rst(1'b0), .x, .y,
+				           .pixel_color, .pixel_write(1'b1), .dfb_en, .frame_start,
+				           .VGA_R, .VGA_G, .VGA_B, .VGA_CLK, .VGA_HS, .VGA_VS,
+				           .VGA_BLANK_N, .VGA_SYNC_N);
+	
+	// draw lines between (x0, y0) and (x1, y1)
+	line_drawer lines (.clk(CLOCK_50), .reset(1'b0),
+				            .x0, .y0, .x1, .y1, .x, .y);
+		
+	// specify 12 lines in hard code	
+   always_latch begin
+	    case (SW[3:0])
+
+           // draw 1st line		 		  
+		     1: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 0;
+				      y1 = 0;
+				      pixel_color = 1'b1;	     
+			     end
+			  
+           // draw 2nd line		 		  
+		     2: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 100;
+				      y1 = 100;
+				      pixel_color = 1'b1;
+			     end
+							
+           // draw 3rd line		 		  
+		     3: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 0;
+				      y1 = 100;
+				      pixel_color = 1'b1;
+			     end
+			  
+           // draw 4th line		 		  
+		     4: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 100;
+				      y1 = 0;
+				      pixel_color = 1'b1;
+			     end							
+
+           // draw 5th line		 		  
+		     5: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 70;
+				      y1 = 0;
+				      pixel_color = 1'b1;		
+			     end
+			  
+           // draw 6th line		 		  
+		     6: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 30;
+				      y1 = 100;
+			         pixel_color = 1'b1;
+			     end
+							
+           // draw 7th line		 		  
+		     7: begin
+                  x0 = 50;
+			         y0 = 50;
+				      x1 = 30;
+				      y1 = 0;
+				      pixel_color = 1'b1;
+			     end
+			  
+           // draw 8th line		 		  
+		     8: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 0;
+				      y1 = 35;
+				      pixel_color = 1'b1;
+			     end							
+
+           // draw 9th line		 		  
+		     9: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 0;
+				      y1 = 70;
+				      pixel_color = 1'b1;
+			     end
+			  
+          // draw 10th line		 		  
+		    10: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 100;
+				      y1 = 35;
+				      pixel_color = 1'b1;
+			     end
+							
+          // draw 11th line		 		  
+		    11: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 100;
+				      y1 = 70;
+				      pixel_color = 1'b1;
+			     end
+			  
+          // draw 12th line		 		  
+		    12: begin
+                  x0 = 50;
+				      y0 = 50;
+				      x1 = 70;
+				      y1 = 100;
+				      pixel_color = 1'b1;
+			     end											 
+			
+			  default:	;		  
+		 endcase
+	end	
+		
+endmodule
+
+/*====================================================================*/
+//  Testbench------------------ DE1_SoC_testbench                                                                                                  
+/*====================================================================*/
+module DE1_SoC_testbench();
+
+	logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	logic [9:0] LEDR;
+	logic [3:0] KEY;
+	logic [9:0] SW;
+
+	logic CLOCK_50;
+	logic [7:0] VGA_R;
+	logic [7:0] VGA_G;
+	logic [7:0] VGA_B;
+	logic VGA_BLANK_N;
+	logic VGA_CLK;
+	logic VGA_HS;
+	logic VGA_SYNC_N;
+	logic VGA_VS;
+	
+	integer i;
+
+
+    DE1_SoC dut (.HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5,
+                 .KEY, .LEDR, .SW, .CLOCK_50, .VGA_R, .VGA_G, .VGA_B, 
+					  .VGA_BLANK_N, .VGA_CLK, .VGA_HS, .VGA_SYNC_N, .VGA_VS);
+
+   // Set up a simulated clock: 50 MHz  
+   parameter CLOCK_PERIOD = 20; // default timescale 1ns/1ns
+
+   initial begin
+       CLOCK_50 <= 0;
+       forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50;
+   end
+
+   // Test the design.
+   initial begin
+       SW[9] <= 1;          // reset = 1
+	    repeat(3) 
+	    @(posedge CLOCK_50);
+	    SW[9] <= 0;          // reset = 0
+		 @(posedge CLOCK_50);
+		 
+		 for (i = 1; i < 13; i++) begin
+		     SW[3:0] <= i;
+           repeat(500) 
+	        @(posedge CLOCK_50);
+		 end
+		 	 
+	    $stop; // End the simulation.
+   end
+		
+endmodule

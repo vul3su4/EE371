@@ -1,0 +1,423 @@
+|DE1_SoC
+HEX5[0] <= top_cell:top.HEX5[0]
+HEX5[1] <= top_cell:top.HEX5[1]
+HEX5[2] <= top_cell:top.HEX5[2]
+HEX5[3] <= top_cell:top.HEX5[3]
+HEX5[4] <= top_cell:top.HEX5[4]
+HEX5[5] <= top_cell:top.HEX5[5]
+HEX5[6] <= top_cell:top.HEX5[6]
+HEX4[0] <= top_cell:top.HEX4[0]
+HEX4[1] <= top_cell:top.HEX4[1]
+HEX4[2] <= top_cell:top.HEX4[2]
+HEX4[3] <= top_cell:top.HEX4[3]
+HEX4[4] <= top_cell:top.HEX4[4]
+HEX4[5] <= top_cell:top.HEX4[5]
+HEX4[6] <= top_cell:top.HEX4[6]
+HEX3[0] <= top_cell:top.HEX3[0]
+HEX3[1] <= top_cell:top.HEX3[1]
+HEX3[2] <= top_cell:top.HEX3[2]
+HEX3[3] <= top_cell:top.HEX3[3]
+HEX3[4] <= top_cell:top.HEX3[4]
+HEX3[5] <= top_cell:top.HEX3[5]
+HEX3[6] <= top_cell:top.HEX3[6]
+HEX2[0] <= top_cell:top.HEX2[0]
+HEX2[1] <= top_cell:top.HEX2[1]
+HEX2[2] <= top_cell:top.HEX2[2]
+HEX2[3] <= top_cell:top.HEX2[3]
+HEX2[4] <= top_cell:top.HEX2[4]
+HEX2[5] <= top_cell:top.HEX2[5]
+HEX2[6] <= top_cell:top.HEX2[6]
+HEX1[0] <= top_cell:top.HEX1[0]
+HEX1[1] <= top_cell:top.HEX1[1]
+HEX1[2] <= top_cell:top.HEX1[2]
+HEX1[3] <= top_cell:top.HEX1[3]
+HEX1[4] <= top_cell:top.HEX1[4]
+HEX1[5] <= top_cell:top.HEX1[5]
+HEX1[6] <= top_cell:top.HEX1[6]
+HEX0[0] <= top_cell:top.HEX0[0]
+HEX0[1] <= top_cell:top.HEX0[1]
+HEX0[2] <= top_cell:top.HEX0[2]
+HEX0[3] <= top_cell:top.HEX0[3]
+HEX0[4] <= top_cell:top.HEX0[4]
+HEX0[5] <= top_cell:top.HEX0[5]
+HEX0[6] <= top_cell:top.HEX0[6]
+KEY[1] => top_cell:top.Prs[1]
+KEY[2] => top_cell:top.Prs[2]
+KEY[3] => top_cell:top.Prs[3]
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => SW[9].IN1
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+V_GPIO[25] <> <UNC>
+V_GPIO[26] <> V_GPIO[26]
+V_GPIO[27] <> V_GPIO[27]
+V_GPIO[31] <> V_GPIO[31]
+V_GPIO[32] <> V_GPIO[32]
+V_GPIO[33] <> V_GPIO[33]
+V_GPIO[34] <> V_GPIO[34]
+V_GPIO[35] <> <UNC>
+CLOCK_50 => CLOCK_50.IN1
+
+
+|DE1_SoC|top_cell:top
+CLK => passcode_all_counter:K1.CLK
+RST => passcode_all_counter:K1.RST
+Prs[1] => passcode_all_counter:K1.Prs[1]
+Prs[2] => passcode_all_counter:K1.Prs[2]
+Prs[3] => passcode_all_counter:K1.Prs[3]
+Car_in => passcode_all_counter:K1.Car_in
+Car_out => passcode_all_counter:K1.Car_out
+Entrance <= passcode_all_counter:K1.Entrance
+Exit <= passcode_all_counter:K1.Exit
+HEX5[0] <= bcd7seg:K2.HEX5[0]
+HEX5[1] <= bcd7seg:K2.HEX5[1]
+HEX5[2] <= bcd7seg:K2.HEX5[2]
+HEX5[3] <= bcd7seg:K2.HEX5[3]
+HEX5[4] <= bcd7seg:K2.HEX5[4]
+HEX5[5] <= bcd7seg:K2.HEX5[5]
+HEX5[6] <= bcd7seg:K2.HEX5[6]
+HEX4[0] <= bcd7seg:K2.HEX4[0]
+HEX4[1] <= bcd7seg:K2.HEX4[1]
+HEX4[2] <= bcd7seg:K2.HEX4[2]
+HEX4[3] <= bcd7seg:K2.HEX4[3]
+HEX4[4] <= bcd7seg:K2.HEX4[4]
+HEX4[5] <= bcd7seg:K2.HEX4[5]
+HEX4[6] <= bcd7seg:K2.HEX4[6]
+HEX3[0] <= bcd7seg:K2.HEX3[0]
+HEX3[1] <= bcd7seg:K2.HEX3[1]
+HEX3[2] <= bcd7seg:K2.HEX3[2]
+HEX3[3] <= bcd7seg:K2.HEX3[3]
+HEX3[4] <= bcd7seg:K2.HEX3[4]
+HEX3[5] <= bcd7seg:K2.HEX3[5]
+HEX3[6] <= bcd7seg:K2.HEX3[6]
+HEX2[0] <= bcd7seg:K2.HEX2[0]
+HEX2[1] <= bcd7seg:K2.HEX2[1]
+HEX2[2] <= bcd7seg:K2.HEX2[2]
+HEX2[3] <= bcd7seg:K2.HEX2[3]
+HEX2[4] <= bcd7seg:K2.HEX2[4]
+HEX2[5] <= bcd7seg:K2.HEX2[5]
+HEX2[6] <= bcd7seg:K2.HEX2[6]
+HEX1[0] <= bcd7seg:K2.HEX1[0]
+HEX1[1] <= bcd7seg:K2.HEX1[1]
+HEX1[2] <= bcd7seg:K2.HEX1[2]
+HEX1[3] <= bcd7seg:K2.HEX1[3]
+HEX1[4] <= bcd7seg:K2.HEX1[4]
+HEX1[5] <= bcd7seg:K2.HEX1[5]
+HEX1[6] <= bcd7seg:K2.HEX1[6]
+HEX0[0] <= bcd7seg:K2.HEX0[0]
+HEX0[1] <= bcd7seg:K2.HEX0[1]
+HEX0[2] <= bcd7seg:K2.HEX0[2]
+HEX0[3] <= bcd7seg:K2.HEX0[3]
+HEX0[4] <= bcd7seg:K2.HEX0[4]
+HEX0[5] <= bcd7seg:K2.HEX0[5]
+HEX0[6] <= bcd7seg:K2.HEX0[6]
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1
+CLK => CLK.IN4
+RST => RST.IN4
+Prs[1] => Prs[1].IN1
+Prs[2] => Prs[2].IN1
+Prs[3] => Prs[3].IN1
+Car_in => Entrance.IN1
+Car_out => Car_out.IN1
+Entrance <= Entrance.DB_MAX_OUTPUT_PORT_TYPE
+Exit <= Car_out.DB_MAX_OUTPUT_PORT_TYPE
+count[0] <= counter:m2.count
+count[1] <= counter:m2.count
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|passcode_all:m1
+CLK => CLK.IN7
+RST => RST.IN7
+Prs[1] => Prs[1].IN1
+Prs[2] => Prs[2].IN1
+Prs[3] => Prs[3].IN1
+P2 <= passcode:m4.P2
+P1 <= passcode:m4.P1
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|passcode_all:m1|twoDFF:n3
+CLK => Q1.CLK
+CLK => Q~reg0.CLK
+RST => Q1.ACLR
+RST => Q~reg0.ACLR
+D => Q1.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|passcode_all:m1|twoDFF:n2
+CLK => Q1.CLK
+CLK => Q~reg0.CLK
+RST => Q1.ACLR
+RST => Q~reg0.ACLR
+D => Q1.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|passcode_all:m1|twoDFF:n1
+CLK => Q1.CLK
+CLK => Q~reg0.CLK
+RST => Q1.ACLR
+RST => Q~reg0.ACLR
+D => Q1.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|passcode_all:m1|userInput:nn3
+CLK => ps~1.DATAIN
+RST => ps~3.DATAIN
+Qin => ns.s1.DATAB
+Qin => Selector0.IN1
+Qin => ps.start.DATAIN
+Qeff <= Qeff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|passcode_all:m1|userInput:nn2
+CLK => ps~1.DATAIN
+RST => ps~3.DATAIN
+Qin => ns.s1.DATAB
+Qin => Selector0.IN1
+Qin => ps.start.DATAIN
+Qeff <= Qeff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|passcode_all:m1|userInput:nn1
+CLK => ps~1.DATAIN
+RST => ps~3.DATAIN
+Qin => ns.s1.DATAB
+Qin => Selector0.IN1
+Qin => ps.start.DATAIN
+Qeff <= Qeff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|passcode_all:m1|passcode:m4
+CLK => ps~1.DATAIN
+RST => ps~3.DATAIN
+B3 => always0.IN0
+B3 => always0.IN0
+B3 => ns.OUTPUTSELECT
+B3 => ns.OUTPUTSELECT
+B3 => ns.DATAA
+B3 => always0.IN1
+B3 => ns.DATAA
+B2 => ns.OUTPUTSELECT
+B2 => ns.OUTPUTSELECT
+B2 => always0.IN1
+B2 => ns.OUTPUTSELECT
+B2 => ns.OUTPUTSELECT
+B2 => always0.IN0
+B2 => ns.DATAA
+B2 => ns.s3.DATAB
+B2 => always0.IN0
+B1 => ns.OUTPUTSELECT
+B1 => ns.OUTPUTSELECT
+B1 => ns.OUTPUTSELECT
+B1 => ns.OUTPUTSELECT
+B1 => ns.OUTPUTSELECT
+B1 => always0.IN1
+B1 => always0.IN1
+B1 => Selector1.IN3
+B1 => Selector2.IN3
+B1 => Selector4.IN3
+B1 => always0.IN1
+P2 <= P2.DB_MAX_OUTPUT_PORT_TYPE
+P1 <= P1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|counter:m2
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+inc => always0.IN0
+inc => always0.IN0
+dec => always0.IN1
+dec => always0.IN1
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|twoDFF:m3
+CLK => Q1.CLK
+CLK => Q~reg0.CLK
+RST => Q1.ACLR
+RST => Q~reg0.ACLR
+D => Q1.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|passcode_all_counter:K1|userInput:m4
+CLK => ps~1.DATAIN
+RST => ps~3.DATAIN
+Qin => ns.s1.DATAB
+Qin => Selector0.IN1
+Qin => ps.start.DATAIN
+Qeff <= Qeff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_cell:top|bcd7seg:K2
+bcd[0] => Decoder0.IN1
+bcd[0] => HEX0[4].DATAIN
+bcd[1] => Decoder0.IN0
+bcd[1] => HEX0[6].DATAIN
+HEX5[0] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[1] <= <VCC>
+HEX5[2] <= <VCC>
+HEX5[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[4] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[5] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[0] <= <VCC>
+HEX4[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[3] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[4] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[5] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[6] <= <VCC>
+HEX3[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[1] <= <VCC>
+HEX3[2] <= <VCC>
+HEX3[3] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[4] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[5] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[4] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[5] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[0] <= <VCC>
+HEX1[1] <= <VCC>
+HEX1[2] <= <VCC>
+HEX1[3] <= <VCC>
+HEX1[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= <GND>
+HEX0[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= bcd[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= bcd[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|signal_extender:top_ext
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+in => count.OUTPUTSELECT
+out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+
+

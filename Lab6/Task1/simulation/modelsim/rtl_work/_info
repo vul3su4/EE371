@@ -1,0 +1,439 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/cychen/work/371/LAB6/Task1/simulation/modelsim
+vbcd7seg
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1741509920
+!i10b 1
+!s100 da9[IVYoI;zZ[mAECh=hC0
+IOl8LMfE^;V02MjC_GL@_m0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 bcd7seg_sv_unit
+S1
+R0
+Z5 w1737142392
+Z6 8C:/cychen/work/371/LAB6/Task1/bcd7seg.sv
+Z7 FC:/cychen/work/371/LAB6/Task1/bcd7seg.sv
+L0 6
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1741509920.000000
+Z10 !s107 C:/cychen/work/371/LAB6/Task1/bcd7seg.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/bcd7seg.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+C:/cychen/work/371/LAB6/Task1
+Z14 tCvgOpt 0
+vbcd7seg_testbench
+R1
+R2
+!i10b 1
+!s100 RjQ?U^zc9li<F>4RfLiVK1
+I;K4FOU7<C?eN4UBZbMNoi1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 39
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vcounter
+R1
+R2
+!i10b 1
+!s100 fJYCV;cCS50RVbebR<n_b2
+IH5EhnXoK86mfofRk<JEA32
+R3
+Z15 !s105 counter_sv_unit
+S1
+R0
+Z16 w1737142384
+Z17 8C:/cychen/work/371/LAB6/Task1/counter.sv
+Z18 FC:/cychen/work/371/LAB6/Task1/counter.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 C:/cychen/work/371/LAB6/Task1/counter.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/counter.sv|
+!i113 1
+R12
+R13
+R14
+vcounter_testbench
+R1
+R2
+!i10b 1
+!s100 8>?B=c0N5K3WM@Vin@S[V2
+IJ9kW0o:I>P;K1f6;6f`Sf3
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 27
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 1QSj3R_KcVeVc^YB9VKfU2
+IjZP^k9ZoMgS^39`H>Ccn`2
+R3
+Z21 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z22 w1741509060
+Z23 8C:/cychen/work/371/LAB6/Task1/DE1_SoC.sv
+Z24 FC:/cychen/work/371/LAB6/Task1/DE1_SoC.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z25 !s107 C:/cychen/work/371/LAB6/Task1/DE1_SoC.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/DE1_SoC.sv|
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 7Fh;J]zI68JHj:oc@[>AG3
+IB::deL=9[Ig^ZkB]MLS8A0
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 37
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vpasscode
+R1
+R2
+!i10b 1
+!s100 JlDCV<`LI6=9P=]E_1ZH;1
+IbX3H`LE0T9nleD38M6Rg50
+R3
+Z27 !s105 passcode_sv_unit
+S1
+R0
+Z28 w1737142370
+Z29 8C:/cychen/work/371/LAB6/Task1/passcode.sv
+Z30 FC:/cychen/work/371/LAB6/Task1/passcode.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z31 !s107 C:/cychen/work/371/LAB6/Task1/passcode.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/passcode.sv|
+!i113 1
+R12
+R13
+R14
+vpasscode_all
+R1
+R2
+!i10b 1
+!s100 eIY]`FK]WSY>A6f;=kjF[3
+I79M59m8?W0>Uom7o7HeYn2
+R3
+Z33 !s105 passcode_all_sv_unit
+S1
+R0
+Z34 w1737142378
+Z35 8C:/cychen/work/371/LAB6/Task1/passcode_all.sv
+Z36 FC:/cychen/work/371/LAB6/Task1/passcode_all.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z37 !s107 C:/cychen/work/371/LAB6/Task1/passcode_all.sv|
+Z38 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/passcode_all.sv|
+!i113 1
+R12
+R13
+R14
+vpasscode_all__counter_testbench
+R1
+R2
+!i10b 1
+!s100 VLSLT^h4BK6YaQakeDA=z0
+I]AHX>CCc]FY[LI];boOC=2
+R3
+Z39 !s105 passcode_all_counter_sv_unit
+S1
+R0
+Z40 w1737142404
+Z41 8C:/cychen/work/371/LAB6/Task1/passcode_all_counter.sv
+Z42 FC:/cychen/work/371/LAB6/Task1/passcode_all_counter.sv
+Z43 L0 23
+R8
+r1
+!s85 0
+31
+R9
+Z44 !s107 C:/cychen/work/371/LAB6/Task1/passcode_all_counter.sv|
+Z45 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/passcode_all_counter.sv|
+!i113 1
+R12
+R13
+R14
+vpasscode_all_counter
+R1
+R2
+!i10b 1
+!s100 fUzhAgbCn5Wkd3o;GSlU[2
+I[>_7cnKzJYmPdY@8NnI^S1
+R3
+R39
+S1
+R0
+R40
+R41
+R42
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R44
+R45
+!i113 1
+R12
+R13
+R14
+vpasscode_all_testbench
+R1
+R2
+!i10b 1
+!s100 @GFc2l`1GNXU?zkHBd8JP1
+I9WA6`?EFU]2:WL126:NNg2
+R3
+R33
+S1
+R0
+R34
+R35
+R36
+R43
+R8
+r1
+!s85 0
+31
+R9
+R37
+R38
+!i113 1
+R12
+R13
+R14
+vpasscode_testbench
+R1
+R2
+!i10b 1
+!s100 RiKfOSGB8WDUdQC28XXLi0
+Ih;?X3VO:z3Ze`kkZF2lZU3
+R3
+R27
+S1
+R0
+R28
+R29
+R30
+L0 101
+R8
+r1
+!s85 0
+31
+R9
+R31
+R32
+!i113 1
+R12
+R13
+R14
+vsignal_extender
+R1
+R2
+!i10b 1
+!s100 h^0H>QD2_>nnA8?T2nLd>1
+I6KOIjn50G6dV0]b>4li;o3
+R3
+!s105 signal_extender_sv_unit
+S1
+R0
+w1737019030
+8C:/cychen/work/371/LAB6/Task1/signal_extender.sv
+FC:/cychen/work/371/LAB6/Task1/signal_extender.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/cychen/work/371/LAB6/Task1/signal_extender.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/signal_extender.sv|
+!i113 1
+R12
+R13
+R14
+vtop_cell
+R1
+R2
+!i10b 1
+!s100 kTV4@5kQ5Zbf^K;l4Z6NK1
+II78[H2JYCQecdToCEi5VC0
+R3
+Z46 !s105 top_cell_sv_unit
+S1
+R0
+Z47 w1737142342
+Z48 8C:/cychen/work/371/LAB6/Task1/top_cell.sv
+Z49 FC:/cychen/work/371/LAB6/Task1/top_cell.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z50 !s107 C:/cychen/work/371/LAB6/Task1/top_cell.sv|
+Z51 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/top_cell.sv|
+!i113 1
+R12
+R13
+R14
+vtop_cell_testbench
+R1
+R2
+!i10b 1
+!s100 nFGOU=FXc;lfUN<`Kk][T0
+ISnU@bW7ZXc?Vi7Zc0UDWh2
+R3
+R46
+S1
+R0
+R47
+R48
+R49
+L0 16
+R8
+r1
+!s85 0
+31
+R9
+R50
+R51
+!i113 1
+R12
+R13
+R14
+vtwoDFF
+R1
+R2
+!i10b 1
+!s100 51DV59mE2[H<Rdo75^8=]3
+IYH0GH5[3gLd2P@oF88CS82
+R3
+!s105 twoDFF_sv_unit
+S1
+R0
+w1737108306
+8C:/cychen/work/371/LAB6/Task1/twoDFF.sv
+FC:/cychen/work/371/LAB6/Task1/twoDFF.sv
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/cychen/work/371/LAB6/Task1/twoDFF.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/twoDFF.sv|
+!i113 1
+R12
+R13
+R14
+ntwo@d@f@f
+vuserInput
+R1
+R2
+!i10b 1
+!s100 >JnWI7[27Ub4mzUHl[zNn3
+IH@=]he]WkdFUK1ILX7_Y?2
+R3
+!s105 userInput_sv_unit
+S1
+R0
+w1737108378
+8C:/cychen/work/371/LAB6/Task1/userInput.sv
+FC:/cychen/work/371/LAB6/Task1/userInput.sv
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/cychen/work/371/LAB6/Task1/userInput.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task1|C:/cychen/work/371/LAB6/Task1/userInput.sv|
+!i113 1
+R12
+R13
+R14
+nuser@input

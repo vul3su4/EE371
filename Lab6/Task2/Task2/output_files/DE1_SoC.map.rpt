@@ -1,0 +1,1074 @@
+Analysis & Synthesis report for DE1_SoC
+Thu Mar 13 15:16:53 2025
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. State Machine - |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|count_updw:c1|ps
+ 11. State Machine - |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|userInput:m6|ps
+ 12. State Machine - |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|userInput:m4|ps
+ 13. State Machine - |DE1_SoC|top_ctrl_datapath:top|parkinglot_ctrl:ctrl|ps
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Source assignments for top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated
+ 19. Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d5
+ 20. Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d4
+ 21. Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d3
+ 22. Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d2
+ 23. Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d1
+ 24. Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d0
+ 25. Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component
+ 26. altsyncram Parameter Settings by Entity Instance
+ 27. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m30"
+ 28. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m31"
+ 29. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m32"
+ 30. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m33"
+ 31. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m34"
+ 32. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m35"
+ 33. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m20"
+ 34. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m21"
+ 35. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m22"
+ 36. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m23"
+ 37. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m24"
+ 38. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m13"
+ 39. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m14"
+ 40. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d0"
+ 41. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d2"
+ 42. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d3"
+ 43. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d4"
+ 44. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d5"
+ 45. Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple"
+ 46. Post-Synthesis Netlist Statistics for Top Partition
+ 47. Elapsed Time Per Partition
+ 48. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Mar 13 15:16:53 2025       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE1_SoC                                     ;
+; Top-level Entity Name           ; DE1_SoC                                     ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 32                                          ;
+; Total pins                      ; 80                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 32                                          ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; DE1_SoC            ; DE1_SoC            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
+; count_updw.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/count_updw.sv                  ;         ;
+; counter.sv                       ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/counter.sv                     ;         ;
+; data7seg.sv                      ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/data7seg.sv                    ;         ;
+; parkinglot_ctrl.sv               ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_ctrl.sv             ;         ;
+; parkinglot_datapath.sv           ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv         ;         ;
+; top_datapath.sv                  ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv                ;         ;
+; twoDFF.sv                        ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/twoDFF.sv                      ;         ;
+; userInput.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/userInput.sv                   ;         ;
+; ram8x16.v                        ; yes             ; User Wizard-Generated File   ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/ram8x16.v                      ;         ;
+; top_ctrl_datapath.sv             ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_ctrl_datapath.sv           ;         ;
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv                     ;         ;
+; simple3D.sv                      ; yes             ; User SystemVerilog HDL File  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv                    ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal170.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_i602.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf         ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                   ;
++---------------------------------------------+-------------------------------------------------+
+; Resource                                    ; Usage                                           ;
++---------------------------------------------+-------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 57                                              ;
+;                                             ;                                                 ;
+; Combinational ALUT usage for logic          ; 94                                              ;
+;     -- 7 input functions                    ; 0                                               ;
+;     -- 6 input functions                    ; 18                                              ;
+;     -- 5 input functions                    ; 20                                              ;
+;     -- 4 input functions                    ; 39                                              ;
+;     -- <=3 input functions                  ; 17                                              ;
+;                                             ;                                                 ;
+; Dedicated logic registers                   ; 32                                              ;
+;                                             ;                                                 ;
+; I/O pins                                    ; 80                                              ;
+; Total MLAB memory bits                      ; 0                                               ;
+; Total block memory bits                     ; 32                                              ;
+;                                             ;                                                 ;
+; Total DSP Blocks                            ; 0                                               ;
+;                                             ;                                                 ;
+; Maximum fan-out node                        ; top_ctrl_datapath:top|parkinglot_ctrl:ctrl|ps~3 ;
+; Maximum fan-out                             ; 38                                              ;
+; Total fan-out                               ; 692                                             ;
+; Average fan-out                             ; 2.28                                            ;
++---------------------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                            ;
++-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                            ; Entity Name         ; Library Name ;
++-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |DE1_SoC                                        ; 94 (1)              ; 32 (0)                    ; 32                ; 0          ; 80   ; 0            ; |DE1_SoC                                                                                                                       ; DE1_SoC             ; work         ;
+;    |top_ctrl_datapath:top|                      ; 93 (0)              ; 32 (0)                    ; 32                ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top                                                                                                 ; top_ctrl_datapath   ; work         ;
+;       |parkinglot_ctrl:ctrl|                    ; 16 (16)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|parkinglot_ctrl:ctrl                                                                            ; parkinglot_ctrl     ; work         ;
+;       |top_datapath:datapath|                   ; 77 (4)              ; 29 (4)                    ; 32                ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath                                                                           ; top_datapath        ; work         ;
+;          |parkinglot_datapath:parkinglot|       ; 65 (4)              ; 15 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot                                            ; parkinglot_datapath ; work         ;
+;             |count_updw:c1|                     ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|count_updw:c1                              ; count_updw          ; work         ;
+;             |data7seg:d1|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d1                                ; data7seg            ; work         ;
+;             |mux2_1:m20|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m20                                 ; mux2_1              ; work         ;
+;             |mux2_1:m30|                        ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m30                                 ; mux2_1              ; work         ;
+;             |mux2_1:m31|                        ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m31                                 ; mux2_1              ; work         ;
+;             |mux2_1:m32|                        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m32                                 ; mux2_1              ; work         ;
+;             |mux2_1:m33|                        ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m33                                 ; mux2_1              ; work         ;
+;             |mux2_1:m34|                        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m34                                 ; mux2_1              ; work         ;
+;             |mux2_1:m35|                        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m35                                 ; mux2_1              ; work         ;
+;          |ram8x16:m1|                           ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1                                                                ; ram8x16             ; work         ;
+;             |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
+;                |altsyncram_i602:auto_generated| ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated ; altsyncram_i602     ; work         ;
+;          |simple3D:simple|                      ; 8 (2)               ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple                                                           ; simple3D            ; work         ;
+;             |counter:m2|                        ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|counter:m2                                                ; counter             ; work         ;
+;             |twoDFF:m3|                         ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|twoDFF:m3                                                 ; twoDFF              ; work         ;
+;             |twoDFF:m5|                         ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|twoDFF:m5                                                 ; twoDFF              ; work         ;
+;             |userInput:m4|                      ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|userInput:m4                                              ; userInput           ; work         ;
+;             |userInput:m6|                      ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|userInput:m6                                              ; userInput           ; work         ;
++-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                           ;
++----------------------------------------------------------------------------------------------------------------------------------+------------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                                             ; Type       ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++----------------------------------------------------------------------------------------------------------------------------------+------------+------------------+--------------+--------------+--------------+--------------+------+------+
+; top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|ALTSYNCRAM ; M10K block ; Simple Dual Port ; 8            ; 16           ; 8            ; 16           ; 128  ; None ;
++----------------------------------------------------------------------------------------------------------------------------------+------------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                             ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                 ; IP Include File ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------+-----------------+
+; Altera ; RAM: 2-PORT  ; 17.0    ; N/A          ; N/A          ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1 ; ram8x16.v       ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------+-----------------+
+
+
+Encoding Type:  User-Encoded
++----------------------------------------------------------------------------------------------------------------------+
+; State Machine - |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|count_updw:c1|ps ;
++--------+------+------+------+----------------------------------------------------------------------------------------+
+; Name   ; ps~7 ; ps~6 ; ps~5 ; ps~4                                                                                   ;
++--------+------+------+------+----------------------------------------------------------------------------------------+
+; ps.s0  ; 0    ; 0    ; 0    ; 0                                                                                      ;
+; ps.s1u ; 0    ; 0    ; 0    ; 1                                                                                      ;
+; ps.s2u ; 0    ; 0    ; 1    ; 0                                                                                      ;
+; ps.s3u ; 0    ; 0    ; 1    ; 1                                                                                      ;
+; ps.s4u ; 0    ; 1    ; 0    ; 0                                                                                      ;
+; ps.s5u ; 0    ; 1    ; 0    ; 1                                                                                      ;
+; ps.s6u ; 0    ; 1    ; 1    ; 0                                                                                      ;
+; ps.s7  ; 0    ; 1    ; 1    ; 1                                                                                      ;
+; ps.s1d ; 1    ; 0    ; 0    ; 0                                                                                      ;
+; ps.s2d ; 1    ; 0    ; 0    ; 1                                                                                      ;
+; ps.s3d ; 1    ; 0    ; 1    ; 0                                                                                      ;
+; ps.s4d ; 1    ; 0    ; 1    ; 1                                                                                      ;
+; ps.s5d ; 1    ; 1    ; 0    ; 0                                                                                      ;
+; ps.s6d ; 1    ; 1    ; 0    ; 1                                                                                      ;
++--------+------+------+------+----------------------------------------------------------------------------------------+
+
+
+Encoding Type:  User-Encoded
++------------------------------------------------------------------------------------------------------+
+; State Machine - |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|userInput:m6|ps ;
++----------+------+------------------------------------------------------------------------------------+
+; Name     ; ps~5 ; ps~4                                                                               ;
++----------+------+------------------------------------------------------------------------------------+
+; ps.start ; 0    ; 0                                                                                  ;
+; ps.s1    ; 0    ; 1                                                                                  ;
+; ps.s2    ; 1    ; 0                                                                                  ;
++----------+------+------------------------------------------------------------------------------------+
+
+
+Encoding Type:  User-Encoded
++------------------------------------------------------------------------------------------------------+
+; State Machine - |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|userInput:m4|ps ;
++----------+------+------------------------------------------------------------------------------------+
+; Name     ; ps~5 ; ps~4                                                                               ;
++----------+------+------------------------------------------------------------------------------------+
+; ps.start ; 0    ; 0                                                                                  ;
+; ps.s1    ; 0    ; 1                                                                                  ;
+; ps.s2    ; 1    ; 0                                                                                  ;
++----------+------+------------------------------------------------------------------------------------+
+
+
+Encoding Type:  User-Encoded
++------------------------------------------------------------------------+
+; State Machine - |DE1_SoC|top_ctrl_datapath:top|parkinglot_ctrl:ctrl|ps ;
++-----------------+------+------+----------------------------------------+
+; Name            ; ps~4 ; ps~3 ; ps~2                                   ;
++-----------------+------+------+----------------------------------------+
+; ps.s_idle       ; 0    ; 0    ; 0                                      ;
+; ps.s_go         ; 0    ; 0    ; 1                                      ;
+; ps.s_rush_start ; 0    ; 1    ; 0                                      ;
+; ps.s_rush_end   ; 0    ; 1    ; 1                                      ;
+; ps.s_wait1      ; 1    ; 0    ; 0                                      ;
+; ps.s_wait2      ; 1    ; 0    ; 1                                      ;
+; ps.s_done       ; 1    ; 1    ; 0                                      ;
+; ps.s_display    ; 1    ; 1    ; 1                                      ;
++-----------------+------+------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++------------------------------------------------------------+--------------------+
+; Register name                                              ; Reason for Removal ;
++------------------------------------------------------------+--------------------+
+; top_ctrl_datapath:top|top_datapath:datapath|car_acc[4..15] ; Lost fanout        ;
+; Total Number of Removed Registers = 12                     ;                    ;
++------------------------------------------------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                             ;
++---------------------------------------------------------+--------------------+----------------------------------------------------------+
+; Register name                                           ; Reason for Removal ; Registers Removed due to This Register                   ;
++---------------------------------------------------------+--------------------+----------------------------------------------------------+
+; top_ctrl_datapath:top|top_datapath:datapath|car_acc[15] ; Lost Fanouts       ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[14], ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[13], ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[12], ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[11], ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[10], ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[9],  ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[8],  ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[7],  ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[6],  ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[5],  ;
+;                                                         ;                    ; top_ctrl_datapath:top|top_datapath:datapath|car_acc[4]   ;
++---------------------------------------------------------+--------------------+----------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 32    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 29    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m30|out[2] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m31|out[2] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m34|out[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                             ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                              ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d5 ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                                                                     ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Blank          ; 1111111 ; Unsigned Binary                                                                                          ;
+; Chr_0          ; 1000000 ; Unsigned Binary                                                                                          ;
+; Chr_1          ; 1111001 ; Unsigned Binary                                                                                          ;
+; Chr_2          ; 0100100 ; Unsigned Binary                                                                                          ;
+; Chr_3          ; 0110000 ; Unsigned Binary                                                                                          ;
+; Chr_4          ; 0011001 ; Unsigned Binary                                                                                          ;
+; Chr_5          ; 0010010 ; Unsigned Binary                                                                                          ;
+; Chr_6          ; 0000010 ; Unsigned Binary                                                                                          ;
+; Chr_7          ; 1011000 ; Unsigned Binary                                                                                          ;
+; Chr_8          ; 0000000 ; Unsigned Binary                                                                                          ;
+; Chr_9          ; 0010000 ; Unsigned Binary                                                                                          ;
+; Chr_A          ; 0001000 ; Unsigned Binary                                                                                          ;
+; Chr_b          ; 0000011 ; Unsigned Binary                                                                                          ;
+; Chr_C          ; 1000110 ; Unsigned Binary                                                                                          ;
+; Chr_d          ; 0100001 ; Unsigned Binary                                                                                          ;
+; Chr_E          ; 0000110 ; Unsigned Binary                                                                                          ;
+; Chr_F          ; 0001110 ; Unsigned Binary                                                                                          ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d4 ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                                                                     ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Blank          ; 1111111 ; Unsigned Binary                                                                                          ;
+; Chr_0          ; 1000000 ; Unsigned Binary                                                                                          ;
+; Chr_1          ; 1111001 ; Unsigned Binary                                                                                          ;
+; Chr_2          ; 0100100 ; Unsigned Binary                                                                                          ;
+; Chr_3          ; 0110000 ; Unsigned Binary                                                                                          ;
+; Chr_4          ; 0011001 ; Unsigned Binary                                                                                          ;
+; Chr_5          ; 0010010 ; Unsigned Binary                                                                                          ;
+; Chr_6          ; 0000010 ; Unsigned Binary                                                                                          ;
+; Chr_7          ; 1011000 ; Unsigned Binary                                                                                          ;
+; Chr_8          ; 0000000 ; Unsigned Binary                                                                                          ;
+; Chr_9          ; 0010000 ; Unsigned Binary                                                                                          ;
+; Chr_A          ; 0001000 ; Unsigned Binary                                                                                          ;
+; Chr_b          ; 0000011 ; Unsigned Binary                                                                                          ;
+; Chr_C          ; 1000110 ; Unsigned Binary                                                                                          ;
+; Chr_d          ; 0100001 ; Unsigned Binary                                                                                          ;
+; Chr_E          ; 0000110 ; Unsigned Binary                                                                                          ;
+; Chr_F          ; 0001110 ; Unsigned Binary                                                                                          ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d3 ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                                                                     ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Blank          ; 1111111 ; Unsigned Binary                                                                                          ;
+; Chr_0          ; 1000000 ; Unsigned Binary                                                                                          ;
+; Chr_1          ; 1111001 ; Unsigned Binary                                                                                          ;
+; Chr_2          ; 0100100 ; Unsigned Binary                                                                                          ;
+; Chr_3          ; 0110000 ; Unsigned Binary                                                                                          ;
+; Chr_4          ; 0011001 ; Unsigned Binary                                                                                          ;
+; Chr_5          ; 0010010 ; Unsigned Binary                                                                                          ;
+; Chr_6          ; 0000010 ; Unsigned Binary                                                                                          ;
+; Chr_7          ; 1011000 ; Unsigned Binary                                                                                          ;
+; Chr_8          ; 0000000 ; Unsigned Binary                                                                                          ;
+; Chr_9          ; 0010000 ; Unsigned Binary                                                                                          ;
+; Chr_A          ; 0001000 ; Unsigned Binary                                                                                          ;
+; Chr_b          ; 0000011 ; Unsigned Binary                                                                                          ;
+; Chr_C          ; 1000110 ; Unsigned Binary                                                                                          ;
+; Chr_d          ; 0100001 ; Unsigned Binary                                                                                          ;
+; Chr_E          ; 0000110 ; Unsigned Binary                                                                                          ;
+; Chr_F          ; 0001110 ; Unsigned Binary                                                                                          ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d2 ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                                                                     ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Blank          ; 1111111 ; Unsigned Binary                                                                                          ;
+; Chr_0          ; 1000000 ; Unsigned Binary                                                                                          ;
+; Chr_1          ; 1111001 ; Unsigned Binary                                                                                          ;
+; Chr_2          ; 0100100 ; Unsigned Binary                                                                                          ;
+; Chr_3          ; 0110000 ; Unsigned Binary                                                                                          ;
+; Chr_4          ; 0011001 ; Unsigned Binary                                                                                          ;
+; Chr_5          ; 0010010 ; Unsigned Binary                                                                                          ;
+; Chr_6          ; 0000010 ; Unsigned Binary                                                                                          ;
+; Chr_7          ; 1011000 ; Unsigned Binary                                                                                          ;
+; Chr_8          ; 0000000 ; Unsigned Binary                                                                                          ;
+; Chr_9          ; 0010000 ; Unsigned Binary                                                                                          ;
+; Chr_A          ; 0001000 ; Unsigned Binary                                                                                          ;
+; Chr_b          ; 0000011 ; Unsigned Binary                                                                                          ;
+; Chr_C          ; 1000110 ; Unsigned Binary                                                                                          ;
+; Chr_d          ; 0100001 ; Unsigned Binary                                                                                          ;
+; Chr_E          ; 0000110 ; Unsigned Binary                                                                                          ;
+; Chr_F          ; 0001110 ; Unsigned Binary                                                                                          ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d1 ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                                                                     ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Blank          ; 1111111 ; Unsigned Binary                                                                                          ;
+; Chr_0          ; 1000000 ; Unsigned Binary                                                                                          ;
+; Chr_1          ; 1111001 ; Unsigned Binary                                                                                          ;
+; Chr_2          ; 0100100 ; Unsigned Binary                                                                                          ;
+; Chr_3          ; 0110000 ; Unsigned Binary                                                                                          ;
+; Chr_4          ; 0011001 ; Unsigned Binary                                                                                          ;
+; Chr_5          ; 0010010 ; Unsigned Binary                                                                                          ;
+; Chr_6          ; 0000010 ; Unsigned Binary                                                                                          ;
+; Chr_7          ; 1011000 ; Unsigned Binary                                                                                          ;
+; Chr_8          ; 0000000 ; Unsigned Binary                                                                                          ;
+; Chr_9          ; 0010000 ; Unsigned Binary                                                                                          ;
+; Chr_A          ; 0001000 ; Unsigned Binary                                                                                          ;
+; Chr_b          ; 0000011 ; Unsigned Binary                                                                                          ;
+; Chr_C          ; 1000110 ; Unsigned Binary                                                                                          ;
+; Chr_d          ; 0100001 ; Unsigned Binary                                                                                          ;
+; Chr_E          ; 0000110 ; Unsigned Binary                                                                                          ;
+; Chr_F          ; 0001110 ; Unsigned Binary                                                                                          ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d0 ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                                                                     ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+; Blank          ; 1111111 ; Unsigned Binary                                                                                          ;
+; Chr_0          ; 1000000 ; Unsigned Binary                                                                                          ;
+; Chr_1          ; 1111001 ; Unsigned Binary                                                                                          ;
+; Chr_2          ; 0100100 ; Unsigned Binary                                                                                          ;
+; Chr_3          ; 0110000 ; Unsigned Binary                                                                                          ;
+; Chr_4          ; 0011001 ; Unsigned Binary                                                                                          ;
+; Chr_5          ; 0010010 ; Unsigned Binary                                                                                          ;
+; Chr_6          ; 0000010 ; Unsigned Binary                                                                                          ;
+; Chr_7          ; 1011000 ; Unsigned Binary                                                                                          ;
+; Chr_8          ; 0000000 ; Unsigned Binary                                                                                          ;
+; Chr_9          ; 0010000 ; Unsigned Binary                                                                                          ;
+; Chr_A          ; 0001000 ; Unsigned Binary                                                                                          ;
+; Chr_b          ; 0000011 ; Unsigned Binary                                                                                          ;
+; Chr_C          ; 1000110 ; Unsigned Binary                                                                                          ;
+; Chr_d          ; 0100001 ; Unsigned Binary                                                                                          ;
+; Chr_E          ; 0000110 ; Unsigned Binary                                                                                          ;
+; Chr_F          ; 0001110 ; Unsigned Binary                                                                                          ;
++----------------+---------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-------------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                    ;
++------------------------------------+----------------------+-------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                                 ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                              ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                            ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                            ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                          ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                 ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                                 ;
+; WIDTH_A                            ; 16                   ; Signed Integer                                                          ;
+; WIDTHAD_A                          ; 3                    ; Signed Integer                                                          ;
+; NUMWORDS_A                         ; 8                    ; Signed Integer                                                          ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                                 ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                                 ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                                 ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                 ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                 ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                 ;
+; WIDTH_B                            ; 16                   ; Signed Integer                                                          ;
+; WIDTHAD_B                          ; 3                    ; Signed Integer                                                          ;
+; NUMWORDS_B                         ; 8                    ; Signed Integer                                                          ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                 ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                                 ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                                 ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                                 ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                                 ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                                 ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                                 ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                 ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                                 ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                                 ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                 ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                                 ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                          ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                                 ;
+; RAM_BLOCK_TYPE                     ; M10K                 ; Untyped                                                                 ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                                 ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                                 ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                 ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                 ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                                 ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                                 ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                                 ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                                 ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                                 ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                                 ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                                 ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                                 ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                                 ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                                 ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                 ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                 ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                                 ;
+; CBXI_PARAMETER                     ; altsyncram_i602      ; Untyped                                                                 ;
++------------------------------------+----------------------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                                   ;
++-------------------------------------------+----------------------------------------------------------------------------------------+
+; Name                                      ; Value                                                                                  ;
++-------------------------------------------+----------------------------------------------------------------------------------------+
+; Number of entity instances                ; 1                                                                                      ;
+; Entity Instance                           ; top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                                              ;
+;     -- WIDTH_A                            ; 16                                                                                     ;
+;     -- NUMWORDS_A                         ; 8                                                                                      ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                           ;
+;     -- WIDTH_B                            ; 16                                                                                     ;
+;     -- NUMWORDS_B                         ; 8                                                                                      ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                                 ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                           ;
+;     -- RAM_BLOCK_TYPE                     ; M10K                                                                                   ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                              ;
++-------------------------------------------+----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m30" ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                             ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; d1[2..0] ; Input ; Info     ; Stuck at VCC                                                                        ;
+; d1[5..3] ; Input ; Info     ; Stuck at GND                                                                        ;
+; d1[6]    ; Input ; Info     ; Stuck at VCC                                                                        ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m31" ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                             ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; d1[2..0] ; Input ; Info     ; Stuck at VCC                                                                        ;
+; d1[5..3] ; Input ; Info     ; Stuck at GND                                                                        ;
+; d1[6]    ; Input ; Info     ; Stuck at VCC                                                                        ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m32" ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                             ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; d1[5..1] ; Input ; Info     ; Stuck at GND                                                                        ;
+; d1[6]    ; Input ; Info     ; Stuck at VCC                                                                        ;
+; d1[0]    ; Input ; Info     ; Stuck at VCC                                                                        ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m33" ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                             ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; d1[3..1] ; Input ; Info     ; Stuck at VCC                                                                        ;
+; d1[6..4] ; Input ; Info     ; Stuck at GND                                                                        ;
+; d1[0]    ; Input ; Info     ; Stuck at GND                                                                        ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m34" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m35" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; d0   ; Input ; Info     ; Stuck at VCC                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m20" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; d0   ; Input ; Info     ; Stuck at VCC                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m21" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m22" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m23" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m24" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m13" ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                             ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; d0[5..0] ; Input ; Info     ; Stuck at VCC                                                                        ;
+; d0[6]    ; Input ; Info     ; Stuck at GND                                                                        ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m14" ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                             ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+; d0[5..0] ; Input ; Info     ; Stuck at VCC                                                                        ;
+; d0[6]    ; Input ; Info     ; Stuck at GND                                                                        ;
++----------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d0"                                                        ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                      ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; data    ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "data[3..3]" will be connected to GND. ;
+; data[3] ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d2" ;
++---------+-------+----------+---------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                               ;
++---------+-------+----------+---------------------------------------------------------------------------------------+
+; data[3] ; Input ; Info     ; Stuck at GND                                                                          ;
++---------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d3"                                                     ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; data ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "data[3..3]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d4"                                                     ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; data ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "data[3..3]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d5" ;
++---------+-------+----------+---------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                               ;
++---------+-------+----------+---------------------------------------------------------------------------------------+
+; data[3] ; Input ; Info     ; Stuck at GND                                                                          ;
++---------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple"                                              ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; full  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; empty ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 32                          ;
+;     CLR               ; 21                          ;
+;     ENA CLR           ; 8                           ;
+;     plain             ; 3                           ;
+; arriav_io_obuf        ; 13                          ;
+; arriav_lcell_comb     ; 96                          ;
+;     arith             ; 4                           ;
+;         1 data inputs ; 3                           ;
+;         4 data inputs ; 1                           ;
+;     normal            ; 92                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 38                          ;
+;         5 data inputs ; 20                          ;
+;         6 data inputs ; 18                          ;
+; boundary_port         ; 80                          ;
+; stratixv_ram_block    ; 4                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.49                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Thu Mar 13 15:16:29 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 2 entities, in source file count_updw.sv
+    Info (12023): Found entity 1: count_updw File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/count_updw.sv Line: 4
+    Info (12023): Found entity 2: count_updw_testbench File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/count_updw.sv Line: 47
+Info (12021): Found 2 design units, including 2 entities, in source file counter.sv
+    Info (12023): Found entity 1: counter File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/counter.sv Line: 1
+    Info (12023): Found entity 2: counter_testbench File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/counter.sv Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file data7seg.sv
+    Info (12023): Found entity 1: data7seg File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/data7seg.sv Line: 8
+Info (12021): Found 2 design units, including 2 entities, in source file parkinglot_ctrl.sv
+    Info (12023): Found entity 1: parkinglot_ctrl File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_ctrl.sv Line: 8
+    Info (12023): Found entity 2: parkinglot_ctrl_testbench File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_ctrl.sv Line: 98
+Info (12021): Found 3 design units, including 3 entities, in source file parkinglot_datapath.sv
+    Info (12023): Found entity 1: parkinglot_datapath File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv Line: 8
+    Info (12023): Found entity 2: mux2_1 File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv Line: 113
+    Info (12023): Found entity 3: parkinglot_datapath_testbench File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv Line: 126
+Info (12021): Found 2 design units, including 2 entities, in source file passcode_all_counter.sv
+    Info (12023): Found entity 1: passcode_all_counter File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/passcode_all_counter.sv Line: 1
+    Info (12023): Found entity 2: passcode_all__counter_testbench File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/passcode_all_counter.sv Line: 33
+Info (12021): Found 1 design units, including 1 entities, in source file signal_extender.sv
+    Info (12023): Found entity 1: signal_extender File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/signal_extender.sv Line: 8
+Info (12021): Found 2 design units, including 2 entities, in source file top_datapath.sv
+    Info (12023): Found entity 1: top_datapath File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv Line: 8
+    Info (12023): Found entity 2: top_datapath_testbench File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv Line: 63
+Info (12021): Found 1 design units, including 1 entities, in source file twodff.sv
+    Info (12023): Found entity 1: twoDFF File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/twoDFF.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file userinput.sv
+    Info (12023): Found entity 1: userInput File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/userInput.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file ram8x16.v
+    Info (12023): Found entity 1: ram8x16 File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/ram8x16.v Line: 40
+Info (12021): Found 2 design units, including 2 entities, in source file top_ctrl_datapath.sv
+    Info (12023): Found entity 1: top_ctrl_datapath File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_ctrl_datapath.sv Line: 8
+    Info (12023): Found entity 2: top_ctrl_datapath_testbench File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_ctrl_datapath.sv Line: 71
+Info (12021): Found 2 design units, including 2 entities, in source file de1_soc.sv
+    Info (12023): Found entity 1: DE1_SoC File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 8
+    Info (12023): Found entity 2: DE1_SoC_testbench File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 96
+Info (12021): Found 2 design units, including 2 entities, in source file simple3d.sv
+    Info (12023): Found entity 1: simple3D File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv Line: 1
+    Info (12023): Found entity 2: simple3D_testbench File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at parkinglot_datapath.sv(80): created implicit net for "sel_HEX34" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv Line: 80
+Warning (10236): Verilog HDL Implicit Net warning at passcode_all_counter.sv(26): created implicit net for "Car_in_QD" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/passcode_all_counter.sv Line: 26
+Warning (10236): Verilog HDL Implicit Net warning at DE1_SoC.sv(119): created implicit net for "CLK" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 119
+Warning (10236): Verilog HDL Implicit Net warning at simple3D.sv(26): created implicit net for "Car_in_QD" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv Line: 26
+Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
+Warning (10034): Output port "LEDR[9..5]" at DE1_SoC.sv(15) has no driver File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+Warning (10665): Bidirectional port "V_GPIO[30]" at DE1_SoC.sv(16) has a one-way connection to bidirectional port "V_GPIO[32]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+Warning (10665): Bidirectional port "V_GPIO[29]" at DE1_SoC.sv(16) has a one-way connection to bidirectional port "V_GPIO[27]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+Warning (10665): Bidirectional port "V_GPIO[28]" at DE1_SoC.sv(16) has a one-way connection to bidirectional port "V_GPIO[26]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+Info (12128): Elaborating entity "top_ctrl_datapath" for hierarchy "top_ctrl_datapath:top" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 70
+Info (12128): Elaborating entity "parkinglot_ctrl" for hierarchy "top_ctrl_datapath:top|parkinglot_ctrl:ctrl" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_ctrl_datapath.sv Line: 40
+Info (12128): Elaborating entity "top_datapath" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_ctrl_datapath.sv Line: 64
+Info (12128): Elaborating entity "simple3D" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv Line: 40
+Info (12128): Elaborating entity "counter" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|counter:m2" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at counter.sv(14): truncated value with size 32 to match size of target (2) File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/counter.sv Line: 14
+Warning (10230): Verilog HDL assignment warning at counter.sv(17): truncated value with size 32 to match size of target (2) File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/counter.sv Line: 17
+Info (12128): Elaborating entity "twoDFF" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|twoDFF:m3" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv Line: 23
+Info (12128): Elaborating entity "userInput" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|simple3D:simple|userInput:m4" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/simple3D.sv Line: 24
+Info (12128): Elaborating entity "parkinglot_datapath" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv Line: 46
+Warning (10036): Verilog HDL or VHDL warning at parkinglot_datapath.sv(32): object "wren" assigned a value but never read File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv Line: 32
+Warning (10036): Verilog HDL or VHDL warning at parkinglot_datapath.sv(34): object "car_acc" assigned a value but never read File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv Line: 34
+Info (12128): Elaborating entity "data7seg" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|data7seg:d5" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv Line: 82
+Info (12128): Elaborating entity "mux2_1" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|mux2_1:m14" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv Line: 89
+Info (12128): Elaborating entity "count_updw" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|parkinglot_datapath:parkinglot|count_updw:c1" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/parkinglot_datapath.sv Line: 107
+Info (12128): Elaborating entity "ram8x16" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/top_datapath.sv Line: 50
+Info (12128): Elaborating entity "altsyncram" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/ram8x16.v Line: 89
+Info (12130): Elaborated megafunction instantiation "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/ram8x16.v Line: 89
+Info (12133): Instantiated megafunction "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component" with the following parameter: File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/ram8x16.v Line: 89
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "8"
+    Info (12134): Parameter "numwords_b" = "8"
+    Info (12134): Parameter "operation_mode" = "DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "M10K"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "widthad_a" = "3"
+    Info (12134): Parameter "widthad_b" = "3"
+    Info (12134): Parameter "width_a" = "16"
+    Info (12134): Parameter "width_b" = "16"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_i602.tdf
+    Info (12023): Found entity 1: altsyncram_i602 File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_i602" for hierarchy "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[4]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 162
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[5]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 193
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[6]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 224
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[7]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 255
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[8]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 286
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[9]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 317
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[10]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 348
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[11]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 379
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[12]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 410
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[13]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 441
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[14]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 472
+        Warning (14320): Synthesized away node "top_ctrl_datapath:top|top_datapath:datapath|ram8x16:m1|altsyncram:altsyncram_component|altsyncram_i602:auto_generated|q_b[15]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/db/altsyncram_i602.tdf Line: 503
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "V_GPIO[31]" and its non-tri-state driver. File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13035): Inserted always-enabled tri-state buffer between "V_GPIO[34]" and its non-tri-state driver. File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "V_GPIO[28]" has no driver File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13040): bidirectional pin "V_GPIO[29]" has no driver File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13040): bidirectional pin "V_GPIO[30]" has no driver File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13040): bidirectional pin "V_GPIO[23]" has no driver File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13040): bidirectional pin "V_GPIO[24]" has no driver File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13040): bidirectional pin "V_GPIO[25]" has no driver File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13040): bidirectional pin "V_GPIO[35]" has no driver File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "V_GPIO[26]~synth" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13010): Node "V_GPIO[27]~synth" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13010): Node "V_GPIO[31]~synth" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13010): Node "V_GPIO[32]~synth" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13010): Node "V_GPIO[24]~synth" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+    Warning (13010): Node "V_GPIO[34]~synth" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 16
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+Info (286030): Timing-Driven Synthesis is running
+Warning (14632): Output pin "LEDR[3]" driven by bidirectional pin "V_GPIO[23]" cannot be tri-stated File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+Warning (14632): Output pin "LEDR[4]" driven by bidirectional pin "V_GPIO[24]" cannot be tri-stated File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+Warning (14632): Output pin "LEDR[0]" driven by bidirectional pin "V_GPIO[28]" cannot be tri-stated File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+Warning (14632): Output pin "LEDR[1]" driven by bidirectional pin "V_GPIO[29]" cannot be tri-stated File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+Warning (14632): Output pin "LEDR[2]" driven by bidirectional pin "V_GPIO[30]" cannot be tri-stated File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 15
+Info (17049): 12 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 13
+    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 13
+    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 13
+    Warning (15610): No output dependent on input pin "SW[0]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 14
+    Warning (15610): No output dependent on input pin "SW[1]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 14
+    Warning (15610): No output dependent on input pin "SW[2]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 14
+    Warning (15610): No output dependent on input pin "SW[3]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 14
+    Warning (15610): No output dependent on input pin "SW[4]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 14
+    Warning (15610): No output dependent on input pin "SW[5]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 14
+    Warning (15610): No output dependent on input pin "SW[6]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 14
+    Warning (15610): No output dependent on input pin "SW[7]" File: D:/Brian/work/Verilog/EECSE371/LAB/LAB6/Task2/DE1_SoC.sv Line: 14
+Info (21057): Implemented 190 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21060): Implemented 13 bidirectional pins
+    Info (21061): Implemented 106 logic cells
+    Info (21064): Implemented 4 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 69 warnings
+    Info: Peak virtual memory: 4882 megabytes
+    Info: Processing ended: Thu Mar 13 15:16:53 2025
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:18
+
+

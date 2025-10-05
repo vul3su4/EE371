@@ -1,0 +1,188 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do part1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/part1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:24 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/part1.v 
+# -- Compiling module part1
+# 
+# Top level modules:
+# 	part1
+# End time: 19:48:24 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/clock_generator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/audio_and_video_config.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/audio_and_video_config.v 
+# -- Compiling module audio_and_video_config
+# 
+# Top level modules:
+# 	audio_and_video_config
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/altera_up_slow_clock_generator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/altera_up_slow_clock_generator.v 
+# -- Compiling module Altera_UP_Slow_Clock_Generator
+# 
+# Top level modules:
+# 	Altera_UP_Slow_Clock_Generator
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/altera_up_i2c_av_auto_initialize.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/altera_up_i2c_av_auto_initialize.v 
+# -- Compiling module Altera_UP_I2C_AV_Auto_Initialize
+# 
+# Top level modules:
+# 	Altera_UP_I2C_AV_Auto_Initialize
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/altera_up_i2c.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/altera_up_i2c.v 
+# -- Compiling module Altera_UP_I2C
+# 
+# Top level modules:
+# 	Altera_UP_I2C
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/audio_codec.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/altera_up_clock_edge.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/altera_up_clock_edge.v 
+# -- Compiling module Altera_UP_Clock_Edge
+# 
+# Top level modules:
+# 	Altera_UP_Clock_Edge
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/altera_up_audio_in_deserializer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/altera_up_audio_in_deserializer.v 
+# -- Compiling module Altera_UP_Audio_In_Deserializer
+# 
+# Top level modules:
+# 	Altera_UP_Audio_In_Deserializer
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/altera_up_audio_bit_counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/altera_up_audio_bit_counter.v 
+# -- Compiling module Altera_UP_Audio_Bit_Counter
+# 
+# Top level modules:
+# 	Altera_UP_Audio_Bit_Counter
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v 
+# -- Compiling module Altera_UP_SYNC_FIFO
+# 
+# Top level modules:
+# 	Altera_UP_SYNC_FIFO
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/cychen/work/371/LAB5/Task1 {C:/cychen/work/371/LAB5/Task1/altera_up_audio_out_serializer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:25 on Feb 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/cychen/work/371/LAB5/Task1" C:/cychen/work/371/LAB5/Task1/altera_up_audio_out_serializer.v 
+# -- Compiling module Altera_UP_Audio_Out_Serializer
+# 
+# Top level modules:
+# 	Altera_UP_Audio_Out_Serializer
+# End time: 19:48:25 on Feb 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.part1 -Lf altera_mf_ver
+# vsim -gui -l msim_transcript work.part1 -Lf altera_mf_ver 
+# Start time: 19:48:51 on Feb 26,2025
+# Loading work.part1
+# Loading work.clock_generator
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.audio_and_video_config
+# Loading work.Altera_UP_Slow_Clock_Generator
+# Loading work.Altera_UP_I2C_AV_Auto_Initialize
+# Loading work.Altera_UP_I2C
+# Loading work.audio_codec
+# Loading work.Altera_UP_Clock_Edge
+# Loading work.Altera_UP_Audio_In_Deserializer
+# Loading work.Altera_UP_Audio_Bit_Counter
+# Loading work.Altera_UP_SYNC_FIFO
+# Loading altera_mf_ver.scfifo
+# Loading work.Altera_UP_Audio_Out_Serializer
+# Loading altera_mf_ver.MF_stratixii_pll
+# Loading altera_mf_ver.MF_pll_reg
+# Loading altera_mf_ver.arm_m_cntr
+# Loading altera_mf_ver.arm_n_cntr
+# Loading altera_mf_ver.arm_scale_cntr
+# ** Warning: (vsim-3017) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Too few port connections. Expected 37, found 25.
+#    Time: 0 ps  Iteration: 0  Instance: /part1/my_clock_gen/DE_Clock_Generator_Audio File: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3015) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [PCDPC] - Port size (6) does not match connection size (1) for port 'clk'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(21851).
+#    Time: 0 ps  Iteration: 0  Instance: /part1/my_clock_gen/DE_Clock_Generator_Audio File: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'scanclkena'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'phasecounterselect'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'phaseupdown'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'phasestep'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'configupdate'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'fbmimicbidir'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'phasedone'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'vcooverrange'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'vcounderrange'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'fbout'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'fref'.
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/clock_generator.v(108): [TFMPC] - Missing connection for port 'icdrclk'.
+# ** Warning: (vsim-3017) C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v(127): [TFMPC] - Too few port connections. Expected 13, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /part1/codec/Audio_In_Deserializer/Audio_In_Left_Channel_FIFO/Sync_FIFO File: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v(127): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3017) C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v(127): [TFMPC] - Too few port connections. Expected 13, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /part1/codec/Audio_In_Deserializer/Audio_In_Right_Channel_FIFO/Sync_FIFO File: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v(127): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3017) C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v(127): [TFMPC] - Too few port connections. Expected 13, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /part1/codec/Audio_Out_Serializer/Audio_Out_Left_Channel_FIFO/Sync_FIFO File: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v(127): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3017) C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v(127): [TFMPC] - Too few port connections. Expected 13, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /part1/codec/Audio_Out_Serializer/Audio_Out_Right_Channel_FIFO/Sync_FIFO File: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) C:/cychen/work/371/LAB5/Task1/altera_up_sync_fifo.v(127): [TFMPC] - Missing connection for port 'eccstatus'.
+quit
+# End time: 20:51:41 on Feb 26,2025, Elapsed time: 1:02:50
+# Errors: 0, Warnings: 22

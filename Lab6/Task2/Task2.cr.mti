@@ -1,0 +1,79 @@
+D:/Brian/work/Verilog/EECSE371/LAB/LAB6/userInput.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/userInput.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module userInput
+
+Top level modules:
+	userInput
+
+} {} {}} D:/Brian/work/Verilog/EECSE371/LAB/LAB6/parkinglot_ctrl.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/parkinglot_ctrl.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module parkinglot_ctrl
+-- Compiling module parkinglot_ctrl_testbench
+
+Top level modules:
+	parkinglot_ctrl_testbench
+
+} {} {}} D:/Brian/work/Verilog/EECSE371/LAB/LAB6/counter.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/counter.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module counter
+-- Compiling module counter_testbench
+
+Top level modules:
+	counter_testbench
+
+} {} {}} D:/Brian/work/Verilog/EECSE371/LAB/LAB6/count_updw.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/count_updw.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module count_updw
+-- Compiling module count_updw_testbench
+
+Top level modules:
+	count_updw_testbench
+
+} {} {}} D:/Brian/work/Verilog/EECSE371/LAB/LAB6/data7seg.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/data7seg.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module data7seg
+
+Top level modules:
+	data7seg
+
+} {} {}} D:/Brian/work/Verilog/EECSE371/LAB/LAB6/passcode_all_counter.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/passcode_all_counter.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module passcode_all_counter
+-- Compiling module passcode_all__counter_testbench
+
+Top level modules:
+	passcode_all__counter_testbench
+
+} {} {}} D:/Brian/work/Verilog/EECSE371/LAB/LAB6/parkinglot_datapath.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/parkinglot_datapath.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module parkinglot_datapath
+-- Compiling module mux2_1
+-- Compiling module parkinglot_datapath_testbench
+
+Top level modules:
+	parkinglot_datapath_testbench
+
+} {} {}} D:/Brian/work/Verilog/EECSE371/LAB/LAB6/passcode.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/passcode.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module passcode
+-- Compiling module passcode_testbench
+
+Top level modules:
+	passcode_testbench
+
+} {} {}} D:/Brian/work/Verilog/EECSE371/LAB/LAB6/passcode_all.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/passcode_all.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module passcode_all
+-- Compiling module passcode_all_testbench
+
+Top level modules:
+	passcode_all_testbench
+
+} {} {}} D:/Brian/work/Verilog/EECSE371/LAB/LAB6/twoDFF.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EECSE371/LAB/LAB6/twoDFF.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module twoDFF
+
+Top level modules:
+	twoDFF
+
+} {} {}}

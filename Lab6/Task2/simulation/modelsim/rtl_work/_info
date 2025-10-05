@@ -1,0 +1,538 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/cychen/work/371/LAB6/Task2/simulation/modelsim
+vcount_updw
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1741872762
+!i10b 1
+!s100 _CDSLBWc`mWcQQoJKk^I?1
+I19GO5SM@Madh`Iaj67RSg2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 count_updw_sv_unit
+S1
+R0
+Z5 w1741871787
+Z6 8C:/cychen/work/371/LAB6/Task2/count_updw.sv
+Z7 FC:/cychen/work/371/LAB6/Task2/count_updw.sv
+L0 8
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1741872762.000000
+Z10 !s107 C:/cychen/work/371/LAB6/Task2/count_updw.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/count_updw.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+C:/cychen/work/371/LAB6/Task2
+Z14 tCvgOpt 0
+vcount_updw_testbench
+R1
+R2
+!i10b 1
+!s100 Of;NS^3Gj:K]BXZm_Rdn;3
+I6z];:kXfKaK>R;J8PEz9d1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 51
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vcounter
+R1
+R2
+!i10b 1
+!s100 f::PSODBaO9M^Y2_GG89S0
+IO2L[zkMPC[[^bzD7G6I`:2
+R3
+Z15 !s105 counter_sv_unit
+S1
+R0
+Z16 w1741871952
+Z17 8C:/cychen/work/371/LAB6/Task2/counter.sv
+Z18 FC:/cychen/work/371/LAB6/Task2/counter.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 C:/cychen/work/371/LAB6/Task2/counter.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/counter.sv|
+!i113 1
+R12
+R13
+R14
+vcounter_testbench
+R1
+R2
+!i10b 1
+!s100 df@mVM8>>ODaNT?79olSA1
+IX?U^0b^=]JH@gG>8]LLZ^2
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+vdata7seg
+R1
+R2
+!i10b 1
+!s100 <1m<mVf7^cYFg;ANJ0NTc3
+IkS:i2zdGG5G0o;V_OgP3R2
+R3
+!s105 data7seg_sv_unit
+S1
+R0
+w1741872165
+8C:/cychen/work/371/LAB6/Task2/data7seg.sv
+FC:/cychen/work/371/LAB6/Task2/data7seg.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/cychen/work/371/LAB6/Task2/data7seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/data7seg.sv|
+!i113 1
+R12
+R13
+R14
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 Ib54^^g21ki_kTZKVkFJI0
+IVfQMKBm=z;8mHm=G;6V0F1
+R3
+Z21 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z22 w1741832070
+Z23 8C:/cychen/work/371/LAB6/Task2/DE1_SoC.sv
+Z24 FC:/cychen/work/371/LAB6/Task2/DE1_SoC.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z25 !s107 C:/cychen/work/371/LAB6/Task2/DE1_SoC.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/DE1_SoC.sv|
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 ;5k2QOc]BJ@Y=f7mnD3aj3
+I7WOP<KR?c3a]iE>;S[=Ff0
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 96
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vmux2_1
+R1
+R2
+!i10b 1
+!s100 =NdHhY7AXNl5EQ1lNnOk60
+IICY<4Td2]GB0VKY_BASJH1
+R3
+Z27 !s105 parkinglot_datapath_sv_unit
+S1
+R0
+Z28 w1741872679
+Z29 8C:/cychen/work/371/LAB6/Task2/parkinglot_datapath.sv
+Z30 FC:/cychen/work/371/LAB6/Task2/parkinglot_datapath.sv
+L0 110
+R8
+r1
+!s85 0
+31
+R9
+Z31 !s107 C:/cychen/work/371/LAB6/Task2/parkinglot_datapath.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/parkinglot_datapath.sv|
+!i113 1
+R12
+R13
+R14
+vparkinglot_ctrl
+R1
+R2
+!i10b 1
+!s100 =>209VCV3@0OOW1Xj0@CV2
+Ic@8CO@A?6T@U^=mHVgbF80
+R3
+Z33 !s105 parkinglot_ctrl_sv_unit
+S1
+R0
+Z34 w1741872417
+Z35 8C:/cychen/work/371/LAB6/Task2/parkinglot_ctrl.sv
+Z36 FC:/cychen/work/371/LAB6/Task2/parkinglot_ctrl.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z37 !s107 C:/cychen/work/371/LAB6/Task2/parkinglot_ctrl.sv|
+Z38 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/parkinglot_ctrl.sv|
+!i113 1
+R12
+R13
+R14
+vparkinglot_ctrl_testbench
+R1
+R2
+!i10b 1
+!s100 YdQGWUa7j;P1z1=EE2Qe73
+ISf6HXj5V3=R:?kY?=;>Xb1
+R3
+R33
+S1
+R0
+R34
+R35
+R36
+L0 97
+R8
+r1
+!s85 0
+31
+R9
+R37
+R38
+!i113 1
+R12
+R13
+R14
+vparkinglot_datapath
+R1
+R2
+!i10b 1
+!s100 zZ@FYg@4>6e@_U0cFXjJ71
+IKLoSZiURb1ZS6ChNBQYOa0
+R3
+R27
+S1
+R0
+R28
+R29
+R30
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+R31
+R32
+!i113 1
+R12
+R13
+R14
+vparkinglot_datapath_testbench
+R1
+R2
+!i10b 1
+!s100 V4FHo^YzZ]cL@O6C04=bG3
+I3Ij[cME;Eo:b`faRlW:3K2
+R3
+R27
+S1
+R0
+R28
+R29
+R30
+L0 123
+R8
+r1
+!s85 0
+31
+R9
+R31
+R32
+!i113 1
+R12
+R13
+R14
+vram8x16
+R2
+!i10b 1
+!s100 V4H:Ph?N7Yfef=_n_PPRY0
+I;g7Z2K9kRT4D>ngZgaY:S1
+R3
+R0
+w1741737342
+8C:/cychen/work/371/LAB6/Task2/ram8x16.v
+FC:/cychen/work/371/LAB6/Task2/ram8x16.v
+L0 40
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/cychen/work/371/LAB6/Task2/ram8x16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/ram8x16.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/cychen/work/371/LAB6/Task2
+R14
+vsimple3D
+R1
+R2
+!i10b 1
+!s100 =<KjA8doHlo1O7i[AJ9TW0
+IzTY^3[WU]zQJCCL[]X^:_0
+R3
+Z39 !s105 simple3D_sv_unit
+S1
+R0
+Z40 w1741872658
+Z41 8C:/cychen/work/371/LAB6/Task2/simple3D.sv
+Z42 FC:/cychen/work/371/LAB6/Task2/simple3D.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z43 !s107 C:/cychen/work/371/LAB6/Task2/simple3D.sv|
+Z44 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/simple3D.sv|
+!i113 1
+R12
+R13
+R14
+nsimple3@d
+vsimple3D_testbench
+R1
+R2
+!i10b 1
+!s100 fk_WU@4OFjd_nak0K?XVb0
+I?YogoJ:PRd>NR>=Ji[i;U0
+R3
+R39
+S1
+R0
+R40
+R41
+R42
+L0 38
+R8
+r1
+!s85 0
+31
+R9
+R43
+R44
+!i113 1
+R12
+R13
+R14
+nsimple3@d_testbench
+vtop_ctrl_datapath
+R1
+R2
+!i10b 1
+!s100 lJ26[^PebQT5UJ]iiAFWI2
+IaNEIV_]V<]J6LIfX>EIF`2
+R3
+Z45 !s105 top_ctrl_datapath_sv_unit
+S1
+R0
+Z46 w1741798632
+Z47 8C:/cychen/work/371/LAB6/Task2/top_ctrl_datapath.sv
+Z48 FC:/cychen/work/371/LAB6/Task2/top_ctrl_datapath.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z49 !s107 C:/cychen/work/371/LAB6/Task2/top_ctrl_datapath.sv|
+Z50 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/top_ctrl_datapath.sv|
+!i113 1
+R12
+R13
+R14
+vtop_ctrl_datapath_testbench
+R1
+R2
+!i10b 1
+!s100 74]PajP`;m0gLk>E5kF]a0
+I<G8<L^749ble>YcHE1K^`1
+R3
+R45
+S1
+R0
+R46
+R47
+R48
+L0 71
+R8
+r1
+!s85 0
+31
+R9
+R49
+R50
+!i113 1
+R12
+R13
+R14
+vtop_datapath
+R1
+R2
+!i10b 1
+!s100 h]lgjJdIOl36S?I<V=lVC2
+I=T?;5^SK`cN388U>3_=O00
+R3
+Z51 !s105 top_datapath_sv_unit
+S1
+R0
+R28
+Z52 8C:/cychen/work/371/LAB6/Task2/top_datapath.sv
+Z53 FC:/cychen/work/371/LAB6/Task2/top_datapath.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z54 !s107 C:/cychen/work/371/LAB6/Task2/top_datapath.sv|
+Z55 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/top_datapath.sv|
+!i113 1
+R12
+R13
+R14
+vtop_datapath_testbench
+R1
+R2
+!i10b 1
+!s100 `Y=zT9SH2oD>c_=Oc65el3
+IL^9PiPkCg[kfCk7a26>J50
+R3
+R51
+S1
+R0
+R28
+R52
+R53
+L0 63
+R8
+r1
+!s85 0
+31
+R9
+R54
+R55
+!i113 1
+R12
+R13
+R14
+vtwoDFF
+R1
+R2
+!i10b 1
+!s100 1KY7NADC]XXlO5BBl96mB1
+I_3CGI:^5=D9Vhia8@Hffl1
+R3
+!s105 twoDFF_sv_unit
+S1
+R0
+w1741872489
+8C:/cychen/work/371/LAB6/Task2/twoDFF.sv
+FC:/cychen/work/371/LAB6/Task2/twoDFF.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/cychen/work/371/LAB6/Task2/twoDFF.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/twoDFF.sv|
+!i113 1
+R12
+R13
+R14
+ntwo@d@f@f
+vuserInput
+R1
+R2
+!i10b 1
+!s100 =o;C8S>1KdcW4h?PYAj7L2
+Imi5UO1a:WbGR]P:YiXcIo1
+R3
+!s105 userInput_sv_unit
+S1
+R0
+w1741872605
+8C:/cychen/work/371/LAB6/Task2/userInput.sv
+FC:/cychen/work/371/LAB6/Task2/userInput.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/cychen/work/371/LAB6/Task2/userInput.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/cychen/work/371/LAB6/Task2|C:/cychen/work/371/LAB6/Task2/userInput.sv|
+!i113 1
+R12
+R13
+R14
+nuser@input

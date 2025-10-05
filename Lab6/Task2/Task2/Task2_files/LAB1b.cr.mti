@@ -1,0 +1,15 @@
+D:/Brian/work/Verilog/EE371/LAB/LAB1b/twoDFF.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EE371/LAB/LAB1b/twoDFF.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module twoDFF
+
+Top level modules:
+	twoDFF
+
+} {} {}} D:/Brian/work/Verilog/EE371/LAB/LAB1b/userInput.sv {1 {vlog -work work -vopt -sv -stats=none D:/Brian/work/Verilog/EE371/LAB/LAB1b/userInput.sv
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module userInput
+
+Top level modules:
+	userInput
+
+} {} {}}
